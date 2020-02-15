@@ -7,32 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		694ED5DAC7011ED77E206E97 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EDE01FEB918FE9212E81C /* EventLogger.swift */; };
-		694ED7271B020C1B66981983 /* DateTimeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED22AA68220FCF2FEDB36 /* DateTimeFactory.swift */; };
-		694EDE38C5D934BCC74A73D8 /* LocaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EDDED8BC6523C29F2806D /* LocaleProvider.swift */; };
-		7228F40723E86EDB009D20B7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228F40623E86EDB009D20B7 /* Reachability.swift */; };
-		72C33EA423E0C4DD00A94D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33EA323E0C4DD00A94D03 /* AppDelegate.swift */; };
-		72C33EA623E0C4DD00A94D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33EA523E0C4DD00A94D03 /* ContentView.swift */; };
+		694ED06764AEFEECB622986C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED49B54AD3C51D333362D /* NotificationService.swift */; };
+		694ED1B77B0A60DDFAEABBB2 /* DateTimeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED4545DB40CEC13807E2E /* DateTimeFactory.swift */; };
+		694ED2DF7EE5FF52A0A8D78A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EDA5359A36C37D8C3FC4F /* ContentView.swift */; };
+		694ED367776075889956C3FD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EDE65F45141B3DD92844B /* Reachability.swift */; };
+		694ED5F972DF9E287214C2F4 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED14DFB8641D5FBEF9064 /* PopoverViewController.swift */; };
+		694ED701D8BB6FAB9E0DF0EF /* LocaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EDF4BB278E369A89ABF89 /* LocaleProvider.swift */; };
+		694ED7CF56CF6C83D297E27D /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED1EBF42DB934F8DE8531 /* EventLogger.swift */; };
+		694ED9F287C568B97AA86D8D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED28FEB5A813E2F67AD08 /* EventMonitor.swift */; };
+		694EDFCF53F51EFA9E1C0A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED3AFD7784EE83342A91E /* AppDelegate.swift */; };
 		72C33EA823E0C4DE00A94D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C33EA723E0C4DE00A94D03 /* Assets.xcassets */; };
 		72C33EAB23E0C4DE00A94D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C33EAA23E0C4DE00A94D03 /* Preview Assets.xcassets */; };
 		72C33EAE23E0C4DE00A94D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C33EAC23E0C4DE00A94D03 /* Main.storyboard */; };
-		72C33EB923E0CE1100A94D03 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33EB823E0CE1100A94D03 /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		694ED22AA68220FCF2FEDB36 /* DateTimeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFactory.swift; sourceTree = "<group>"; };
-		694EDDED8BC6523C29F2806D /* LocaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleProvider.swift; sourceTree = "<group>"; };
-		694EDE01FEB918FE9212E81C /* EventLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
-		7228F40623E86EDB009D20B7 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		694ED14DFB8641D5FBEF9064 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		694ED1EBF42DB934F8DE8531 /* EventLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
+		694ED28FEB5A813E2F67AD08 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		694ED3AFD7784EE83342A91E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		694ED4545DB40CEC13807E2E /* DateTimeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFactory.swift; sourceTree = "<group>"; };
+		694ED49B54AD3C51D333362D /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		694EDA5359A36C37D8C3FC4F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		694EDE65F45141B3DD92844B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		694EDF4BB278E369A89ABF89 /* LocaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleProvider.swift; sourceTree = "<group>"; };
 		72C33EA023E0C4DD00A94D03 /* wifi-tout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifi-tout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72C33EA323E0C4DD00A94D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72C33EA523E0C4DD00A94D03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72C33EA723E0C4DE00A94D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C33EAA23E0C4DE00A94D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72C33EAD23E0C4DE00A94D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72C33EAF23E0C4DE00A94D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C33EB023E0C4DE00A94D03 /* wifi_tout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wifi_tout.entitlements; sourceTree = "<group>"; };
-		72C33EB823E0CE1100A94D03 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		694ED0D84F6F1B53297678E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				694EDA5359A36C37D8C3FC4F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		694ED0E12C216A94EBFA81A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				694ED14DFB8641D5FBEF9064 /* PopoverViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		694EDAC1EB3C10CD8292E27D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				694ED49B54AD3C51D333362D /* NotificationService.swift */,
+				694EDF4BB278E369A89ABF89 /* LocaleProvider.swift */,
+				694ED4545DB40CEC13807E2E /* DateTimeFactory.swift */,
+				694ED1EBF42DB934F8DE8531 /* EventLogger.swift */,
+				694EDE65F45141B3DD92844B /* Reachability.swift */,
+				694ED3AFD7784EE83342A91E /* AppDelegate.swift */,
+				694ED28FEB5A813E2F67AD08 /* EventMonitor.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		72C33E9723E0C4DD00A94D03 = {
 			isa = PBXGroup;
 			children = (
@@ -65,18 +99,14 @@
 		72C33EA223E0C4DD00A94D03 /* wifi-tout */ = {
 			isa = PBXGroup;
 			children = (
-				72C33EA323E0C4DD00A94D03 /* AppDelegate.swift */,
-				72C33EA523E0C4DD00A94D03 /* ContentView.swift */,
-				72C33EB823E0CE1100A94D03 /* NotificationService.swift */,
-				7228F40623E86EDB009D20B7 /* Reachability.swift */,
 				72C33EA723E0C4DE00A94D03 /* Assets.xcassets */,
 				72C33EAC23E0C4DE00A94D03 /* Main.storyboard */,
 				72C33EAF23E0C4DE00A94D03 /* Info.plist */,
 				72C33EB023E0C4DE00A94D03 /* wifi_tout.entitlements */,
 				72C33EA923E0C4DE00A94D03 /* Preview Content */,
-				694ED22AA68220FCF2FEDB36 /* DateTimeFactory.swift */,
-				694EDDED8BC6523C29F2806D /* LocaleProvider.swift */,
-				694EDE01FEB918FE9212E81C /* EventLogger.swift */,
+				694ED0E12C216A94EBFA81A1 /* Controllers */,
+				694ED0D84F6F1B53297678E7 /* Views */,
+				694EDAC1EB3C10CD8292E27D /* Service */,
 			);
 			path = "wifi-tout";
 			sourceTree = "<group>";
@@ -160,13 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C33EB923E0CE1100A94D03 /* NotificationService.swift in Sources */,
-				72C33EA623E0C4DD00A94D03 /* ContentView.swift in Sources */,
-				72C33EA423E0C4DD00A94D03 /* AppDelegate.swift in Sources */,
-				7228F40723E86EDB009D20B7 /* Reachability.swift in Sources */,
-				694ED7271B020C1B66981983 /* DateTimeFactory.swift in Sources */,
-				694EDE38C5D934BCC74A73D8 /* LocaleProvider.swift in Sources */,
-				694ED5DAC7011ED77E206E97 /* EventLogger.swift in Sources */,
+				694ED5F972DF9E287214C2F4 /* PopoverViewController.swift in Sources */,
+				694ED2DF7EE5FF52A0A8D78A /* ContentView.swift in Sources */,
+				694ED06764AEFEECB622986C /* NotificationService.swift in Sources */,
+				694ED701D8BB6FAB9E0DF0EF /* LocaleProvider.swift in Sources */,
+				694ED1B77B0A60DDFAEABBB2 /* DateTimeFactory.swift in Sources */,
+				694ED7CF56CF6C83D297E27D /* EventLogger.swift in Sources */,
+				694ED367776075889956C3FD /* Reachability.swift in Sources */,
+				694EDFCF53F51EFA9E1C0A13 /* AppDelegate.swift in Sources */,
+				694ED9F287C568B97AA86D8D /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
