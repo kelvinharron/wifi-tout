@@ -31,6 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.contentViewController = overviewViewController
 
         enableEventMonitor()
+        openPopover(sender: self)
     }
 
     private func enableEventMonitor() {
@@ -63,6 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         button.image = NSImage(named: "Icon")
         button.action = #selector(togglePopover(_:))
+
     }
 
     @objc func togglePopover(_ sender: AnyObject?) {

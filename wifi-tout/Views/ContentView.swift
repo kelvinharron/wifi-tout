@@ -13,7 +13,9 @@ struct ContentView: View {
     @State private var status = "Connected to WiFi"
     private let reachability = Reachability()
     private let notificationService = NotificationService()
-    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    private let wifiService = WiFiService()
+
+    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
 
     var body: some View {
         VStack(alignment: .center, spacing: 5) {
@@ -33,6 +35,8 @@ struct ContentView: View {
 
     private func onNextReachabilityTick() {
         print("Tick")
+        self.wifiService.getWiFiStatus()
+
         if (self.reachability.isConnectedToNetwork()) {
             self.status = "Connected to WiFi"
             self.connectionFailureDetected = false
