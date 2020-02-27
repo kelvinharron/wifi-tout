@@ -20,53 +20,75 @@ private struct WifiChannelStatus {
 
 class WiFiService: CWEventDelegate {
 
-    private let wifiClient = CWWiFiClient()
+    private let wifiClient = CWWiFiClient.shared()
 
     init() {
-        do {
-            try registerForWifiEvents()
-        } catch {
-            print(error)
+        self.wifiClient.delegate = self
+
+        registerForWifiEvents()
+    }
+
+    private func registerForWifiEvents() {
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try self.startMonitoringEvents()
+            } catch {
+                print("Failed to register for wifi events: \(error)")
+            }
         }
     }
 
-    private func registerForWifiEvents() throws {
-        try wifiClient.startMonitoringEvent(with: .ssidDidChange)
-        try wifiClient.startMonitoringEvent(with: .powerDidChange)
-        try wifiClient.startMonitoringEvent(with: .bssidDidChange)
-        try wifiClient.startMonitoringEvent(with: .virtualInterfaceStateChanged)
-    }
+    private func startMonitoringEvents() throws {
+        try self.wifiClient.startMonitoringEvent(with: .linkDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .linkQualityDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .powerDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .countryCodeDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .bssidDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .ssidDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .modeDidChange)
+        try self.wifiClient.startMonitoringEvent(with: .virtualInterfaceStateChanged)
 
-
-    func bssidDidChangeForWiFiInterface(withName interfaceName: String) {
-        print("bssidDidChangeForWiFiInterface")     
-        print(interfaceName)
-    }
-
-    func ssidDidChangeForWiFiInterface(withName interfaceName: String) {
-        print("ssidDidChangeForWiFiInterface")
-        print(interfaceName)
-    }
-
-    func modeDidChangeForWiFiInterface(withName interfaceName: String) {
-        print("modeDidChange")
-        print(interfaceName)
-    }
-
-    func clientConnectionInterrupted() {
-        print("INTERRUPTED")
-    }
-
-    func clientConnectionInvalidated() {
-        print("INVALIDATED")
     }
 
     func linkDidChangeForWiFiInterface(withName interfaceName: String) {
         print("LINK CHANGE")
-        print(interfaceName)
     }
+
+    func linkQualityDidChangeForWiFiInterface(withName interfaceName: String, rssi: Int, transmitRate: Double) {
+        print("linkQualityDidChangeForWiFiInterface")
+    }
+
+    func powerStateDidChangeForWiFiInterface(withName interfaceName: String) {
+        print("powerStateDidChangeForWiFiInterface")
+    }
+
+    func countryCodeDidChangeForWiFiInterface(withName interfaceName: String) {
+        print("countryCodeDidChangeForWiFiInterface")
+    }
+
+    func bssidDidChangeForWiFiInterface(withName interfaceName: String) {
+        print("bssidDidChangeForWiFiInterface")
+    }
+
+    func ssidDidChangeForWiFiInterface(withName interfaceName: String) {
+        print("ssidDidChangeForWiFiInterface")
+    }
+
+    func modeDidChangeForWiFiInterface(withName interfaceName: String) {
+        print("modeDidChange")
+    }
+
+    func clientConnectionInterrupted() {
+        print("clientConnectionInterrupted")
+    }
+
+    func clientConnectionInvalidated() {
+        print("clientConnectionInvalidated")
+    }
+
 
     func getWiFiStatus() {
 
     }
+
 }
